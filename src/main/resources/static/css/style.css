@@ -1,0 +1,134 @@
+head, body{
+
+	margin: 0;
+	padding: 0;
+	background: var(--gray-color);
+}
+:root{
+	--base-color: var(--green-color);
+	--gray-color: rgb(45,45,45);
+	--dark-gray-color: rgba(35,35,35,1);
+	--green-color: #28da8b;
+
+	--top-bar-height: 80px;
+}
+.welcome{
+	color: var(--base-color);
+	font-size: 40px;
+	align-self: center;
+}
+.reg-form{
+
+	padding: 2%;
+
+	color: var(--base-color);
+	font-size: 21px;
+
+	margin-left: 23%;
+	margin-top: 5%;
+	width: 50%;
+
+	border: 2px solid var(--base-color);
+	border-radius: 15px;
+}
+.reg-form input[type=text],input[type=password]{
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+	width: 40%;
+	height: 32px;
+
+	color: var(--base-color);
+
+	background: var(--dark-gray-color);
+	border: 2px solid var(--base-color);
+	border-radius: 10px;	
+}
+.reg-form .send{
+
+	color: var(--base-color);
+
+	background: var(--dark-gray-color);
+	border: 2px solid var(--base-color);
+	border-radius: 10px;	
+
+	width: 20%;
+	height: 32px;
+}
+.top-bar-flex{
+	top: 0;
+	left: 0;
+	right: 0;
+	height: var(--top-bar-height);
+	background-color: var(--dark-gray-color);
+	color: var(--base-color);
+
+	display: flex;
+	justify-content: flex-end;
+}
+.top-bar-button{
+
+	border-radius: 10px;
+	border: 1px solid var(--base-color);
+
+	position: relative;
+	margin: 5px;
+	padding: 15px;
+
+	align-self: center;
+}
+.top-bar-button:last-child{
+	margin-right: 20px;
+}
+.top-bar-button:hover{
+	background: var(--dark-gray-color);
+}
+
+.main-block-wrapper{
+	display: flex;
+	bottom: 0;
+}
+.main-block-left{
+	background: var(--gray-color);
+
+	align-content: center;
+
+
+	width: 10%;
+}
+.main-block-middle{
+	background: black;
+
+	width: 90%;
+	height: 100%;
+}
+.marks-block{
+	padding: 20px;
+}
+.marks-block table{
+	border: 1px solid black;
+	background: white;
+}
+.marks-block table tr{
+	border: 1px solid black;
+}
+.schedule-maker{
+	
+	margin-top: 10%;
+	color: var(--base-color);
+	
+}
+.schedule-maker table, td{
+	border: 1px solid var(--base-color);
+	border-collapse: collapse;
+}
+.schedule-maker td input{
+	width: 170px;
+}
+
+@media only screen and (max-width: 1000px){
+	.top-bar-flex{
+		background-color: red;
+	}
+}
